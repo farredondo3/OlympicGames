@@ -1,3 +1,5 @@
+package com.solvd.olympics;
+
 public class Swimming
 {
     private String name;
@@ -5,7 +7,7 @@ public class Swimming
     private int distance;
     private int strokeCount;
 
-    public Swimming(String name; int heartRate, int distance, int strokeCount)
+    public Swimming(String name, int heartRate, int distance, int strokeCount)
     {
         this.name = name;
         this.heartRate = heartRate;

@@ -1,10 +1,12 @@
+package com.solvd.olympics;
+
 public class Football
 {
     private String name;
     private int touchdowns;
     private int explosiveness;
 
-    pubic Football(String name, int touchdowns, int explosiveness)
+    public Football(String name, int touchdowns, int explosiveness)
     {
         this.name = name;
         this.touchdowns = touchdowns;

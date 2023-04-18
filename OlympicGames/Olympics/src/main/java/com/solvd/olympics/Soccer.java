@@ -1,3 +1,5 @@
+package com.solvd.olympics;
+
 public class Soccer
 {
     private String name;

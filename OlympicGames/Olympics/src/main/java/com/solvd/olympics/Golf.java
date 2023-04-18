@@ -1,3 +1,5 @@
+package com.solvd.olympics;
+
 public class Golf
 {
     private String name;

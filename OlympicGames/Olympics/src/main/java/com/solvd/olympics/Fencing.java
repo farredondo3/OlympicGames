@@ -1,3 +1,5 @@
+package com.solvd.olympics;
+
 public class Fencing
 {
     private String name;
@@ -44,6 +46,7 @@ public class Fencing
     public void setWins(int wins) {
         this.wins = wins;
     }
+}
 
 
 
