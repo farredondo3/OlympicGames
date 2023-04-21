@@ -40,4 +40,18 @@ public class Golf extends Competition
     public int total() {
         return getTotalScore() + getTotalPuts();
     }
+
+    public static String winner(Golf player1, Golf player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

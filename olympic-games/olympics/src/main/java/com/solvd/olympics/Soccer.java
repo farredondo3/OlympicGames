@@ -40,4 +40,18 @@ public class Soccer extends Competition
     public int total() {
         return getGoals() + getAssists();
     }
+
+    public static String winner(Soccer player1, Soccer player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

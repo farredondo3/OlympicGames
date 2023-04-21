@@ -52,14 +52,19 @@ public class Volleyball extends Competition{
 
         return getHeight() + getBlocks() + getReach();
     }
-//
-//    public static String whoWillWin(Volleyball player1, Volleyball player2)
-//    {
-//        if(player1.total() > player2.total())
-//        {
-//            return player1.getName();
-//        }
-//        else return player2.getName();
-//    }
 
+    public static String winner(Volleyball player1, Volleyball player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

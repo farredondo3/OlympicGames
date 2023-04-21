@@ -41,4 +41,18 @@ public class Basketball extends Competition
     {
         return getFreeThrows() + getThreePointers();
     }
+
+    public static String winner(Basketball player1, Basketball player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

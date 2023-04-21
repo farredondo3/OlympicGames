@@ -50,4 +50,18 @@ public class Tennis extends Competition
     public int total() {
         return getServeSpeed() + getHeight() + getWeight();
     }
+
+    public static String winner(Tennis player1, Tennis player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

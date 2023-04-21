@@ -46,4 +46,18 @@ public class Baseball extends Competition
     public int total() {
         return getRuns();
     }
+
+    public static String winner(Baseball player1, Baseball player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

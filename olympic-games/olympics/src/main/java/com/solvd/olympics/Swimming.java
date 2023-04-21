@@ -50,4 +50,18 @@ public class Swimming extends Competition
     public int total() {
         return getDistance() + getHeartRate() + getStrokeCount();
     }
+
+    public static String winner(Swimming player1, Swimming player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }

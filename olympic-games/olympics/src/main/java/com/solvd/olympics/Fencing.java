@@ -50,6 +50,20 @@ public class Fencing extends Competition
     public int total() {
         return getTouchReceived() + getTouchScored() + getWins();
     }
+
+    public static String winner(Fencing player1, Fencing player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }
 
 

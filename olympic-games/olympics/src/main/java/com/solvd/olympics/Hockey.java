@@ -59,4 +59,18 @@ public class Hockey extends Competition
     public int total() {
         return getWins() + getLosses() + getTies() + getFouls();
     }
+
+    public static String winner(Hockey player1, Hockey player2)
+    {
+        if(player1.total() > player2.total())
+        {
+            return player1.getName();
+        }
+        else return player2.getName();
+    }
+
+    @Override
+    public void welcomeAnnouncement() {
+
+    }
 }
