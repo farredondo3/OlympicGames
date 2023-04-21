@@ -1,6 +1,6 @@
 package com.solvd.olympics;
 
-public class Golf
+public class Golf extends Competition
 {
     private String name;
     private int totalScore;
@@ -35,5 +35,9 @@ public class Golf
 
     public void setTotalPuts(int totalPuts) {
         this.totalPuts = totalPuts;
+    }
+
+    public int total() {
+        return getTotalScore() + getTotalPuts();
     }
 }

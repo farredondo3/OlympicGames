@@ -1,13 +1,14 @@
 package com.solvd.olympics;
-public class Volleyball
-{
+
+public class Volleyball extends Competition{
     private String name;
     private int height;
     private int reach;
     private int blocks;
+    //private int total = height + reach + blocks;
 
-    public Volleyball(String name, int height, int reach, int blocks)
-    {
+
+    public Volleyball(String name, int height, int reach, int blocks) {
         this.name = name;
         this.height = height;
         this.reach = reach;
@@ -45,4 +46,20 @@ public class Volleyball
     public void setBlocks(int blocks) {
         this.blocks = blocks;
     }
+
+    public int total()
+    {
+
+        return getHeight() + getBlocks() + getReach();
+    }
+//
+//    public static String whoWillWin(Volleyball player1, Volleyball player2)
+//    {
+//        if(player1.total() > player2.total())
+//        {
+//            return player1.getName();
+//        }
+//        else return player2.getName();
+//    }
+
 }

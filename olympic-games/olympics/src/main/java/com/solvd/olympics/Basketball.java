@@ -1,6 +1,6 @@
 package com.solvd.olympics;
 
-public class Basketball
+public class Basketball extends Competition
 {
     private String name;
     private int freeThrows;
@@ -35,5 +35,10 @@ public class Basketball
 
     public void setThreePointers(int threePointers) {
         this.threePointers = threePointers;
+    }
+
+    public int total()
+    {
+        return getFreeThrows() + getThreePointers();
     }
 }

@@ -1,6 +1,6 @@
 package com.solvd.olympics;
 
-public class Soccer
+public class Soccer extends Competition
 {
     private String name;
     private int goals;
@@ -35,5 +35,9 @@ public class Soccer
 
     public void setAssists(int assists) {
         this.assists = assists;
+    }
+
+    public int total() {
+        return getGoals() + getAssists();
     }
 }

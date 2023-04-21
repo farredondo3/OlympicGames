@@ -1,6 +1,6 @@
 package com.solvd.olympics;
 
-public class Swimming
+public class Swimming extends Competition
 {
     private String name;
     private int heartRate;
@@ -45,5 +45,9 @@ public class Swimming
 
     public void setStrokeCount(int strokeCount) {
         this.strokeCount = strokeCount;
+    }
+
+    public int total() {
+        return getDistance() + getHeartRate() + getStrokeCount();
     }
 }

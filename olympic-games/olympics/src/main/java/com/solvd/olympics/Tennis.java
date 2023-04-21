@@ -1,18 +1,18 @@
 package com.solvd.olympics;
 
-public class Tennis
+public class Tennis extends Competition
 {
     private String name;
     private int serveSpeed;
-    private int wins;
-    private int losses;
+    private int height;
+    private int weight;
 
     public Tennis(String name, int serveSpeed, int wins, int losses)
     {
         this.name = name;
         this.serveSpeed = serveSpeed;
-        this.wins = wins;
-        this.losses = losses;
+        this.height = wins;
+        this.weight = losses;
     }
 
     public String getName() {
@@ -31,19 +31,23 @@ public class Tennis
         this.serveSpeed = serveSpeed;
     }
 
-    public int getWins() {
-        return wins;
+    public int getHeight() {
+        return height;
     }
 
-    public void setWins(int wins) {
-        this.wins = wins;
+    public void setHeight(int wins) {
+        this.height = wins;
     }
 
-    public int getLosses() {
-        return losses;
+    public int getWeight() {
+        return weight;
     }
 
-    public void setLosses(int losses) {
-        this.losses = losses;
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int total() {
+        return getServeSpeed() + getHeight() + getWeight();
     }
 }

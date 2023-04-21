@@ -1,14 +1,14 @@
 package com.solvd.olympics;
 
-public class Baseball
+public class Baseball extends Competition
 {
-    private int battingAvg;
+    //private int battingAvg;
     private String name;
     private int runs;
 
     public Baseball(String name, int battingAvg, int runs)
     {
-        this.battingAvg = battingAvg;
+        //this.battingAvg = battingAvg;
         this.name = name;
         this.runs = runs;
 
@@ -24,15 +24,15 @@ public class Baseball
         this.name = name;
     }
 
-    public int getBattingAvg()
-    {
-        return battingAvg;
-    }
+//    public int getBattingAvg()
+//    {
+//        return battingAvg;
+//    }
 
-    public void setBattingAvg(int battingAvg)
-    {
-        this.battingAvg = battingAvg;
-    }
+//    public void setBattingAvg(int battingAvg)
+//    {
+//        this.battingAvg = battingAvg;
+//    }
 
     public int getRuns()
     {
@@ -41,5 +41,9 @@ public class Baseball
 
     public void setRuns(int runs) {
         this.runs = runs;
+    }
+
+    public int total() {
+        return getRuns();
     }
 }

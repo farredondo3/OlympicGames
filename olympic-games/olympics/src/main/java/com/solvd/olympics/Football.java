@@ -1,16 +1,16 @@
 package com.solvd.olympics;
 
-public class Football
+public class Football extends Competition
 {
     private String name;
     private int touchdowns;
-    private int explosiveness;
+    //private int explosiveness;
 
     public Football(String name, int touchdowns, int explosiveness)
     {
         this.name = name;
         this.touchdowns = touchdowns;
-        this.explosiveness = explosiveness;
+        //this.explosiveness = explosiveness;
     }
 
     public String getName() {
@@ -29,11 +29,15 @@ public class Football
         this.touchdowns = touchdowns;
     }
 
-    public int getExplosiveness() {
-        return explosiveness;
-    }
+//    public int getExplosiveness() {
+//        return explosiveness;
+//    }
+//
+//    public void setExplosiveness(int explosiveness) {
+//        this.explosiveness = explosiveness;
+//    }
 
-    public void setExplosiveness(int explosiveness) {
-        this.explosiveness = explosiveness;
+    public int total() {
+        return getTouchdowns();
     }
 }

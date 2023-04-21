@@ -1,17 +1,19 @@
 package com.solvd.olympics;
 
-public class Hockey
+public class Hockey extends Competition
 {
     private String name;
     private int wins;
     private int losses;
     private int ties;
+    private int fouls;
 
-    public Hockey(int wins, int losses, int ties)
+    public Hockey(int wins, int losses, int ties, int fouls)
     {
         this.wins = wins;
         this.losses = losses;
         this.ties = ties;
+        this.fouls = fouls;
     }
 
     public String getName() {
@@ -44,5 +46,17 @@ public class Hockey
 
     public void setTies(int ties) {
         this.ties = ties;
+    }
+
+    public int getFouls() {
+        return fouls;
+    }
+
+    public void setFouls(int fouls) {
+        this.fouls = fouls;
+    }
+
+    public int total() {
+        return getWins() + getLosses() + getTies() + getFouls();
     }
 }

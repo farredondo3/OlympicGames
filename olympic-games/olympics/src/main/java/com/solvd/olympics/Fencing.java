@@ -1,6 +1,6 @@
 package com.solvd.olympics;
 
-public class Fencing
+public class Fencing extends Competition
 {
     private String name;
     private int touchScored;
@@ -45,6 +45,10 @@ public class Fencing
 
     public void setWins(int wins) {
         this.wins = wins;
+    }
+
+    public int total() {
+        return getTouchReceived() + getTouchScored() + getWins();
     }
 }
 
